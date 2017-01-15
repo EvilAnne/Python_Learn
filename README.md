@@ -6,3 +6,9 @@
 - socker_ScanPort.py  端口扫描
 - ssh_Crack.py  ssh爆破
 - unzip.py  zip密码爆破
+
+* 运维常见漏洞
+
+    - ftp爆破
+    - memcached未授权访问
+    - Mongodb未授权访问

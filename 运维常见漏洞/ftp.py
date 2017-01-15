@@ -28,6 +28,17 @@ def anon_login(host):
         print(" [-] There is no Anonymous User")
         return False
 
+#生成字典可以使用此方法，会生成如下：
+#ftp:12345
+#ftp:11111
+def password_generate(password):
+	username = ['root','ftp','test','admin']
+
+	with open(password) as password_file:
+		for x in password_file:
+			for i in username:
+				print('{}:{}'.format(i,x.strip()))
+
 
 #通过字典尝试爆力破解
 def CrackFtpLogin(host,password):
@@ -40,24 +51,6 @@ def CrackFtpLogin(host,password):
             except Exception as e:
                 pass
 
-
-"""
-#代码写的有问题
-def C_scan_network(tarHost, tarPort):
-	try:
-		s = socket(AF_INET, SOCK_STREAM)
-		s.connect((tarHost, tarPort))
-		banner = s.recv(1024)
-		result_ip = tarHost
-		with open(password) as PassFile:
-			for line in PassFile.readlines():
-				username = line.split(':')[0]
-				password = line.split(':')[1].strip('\r').strip('\n')
-		CrackFtpLogin(result_ip,password)
-		print(" [+] {}:{} open".format(tarHost, tarPort))
-	except:
-		print(" [-] {}:{} cloed".format(tarHost, tarPort))
-"""
 
 
 
