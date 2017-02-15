@@ -7,6 +7,7 @@
 - ssh_Crack.py  ssh爆破
 - unzip.py  zip密码爆破
 
+
 ---
 
 * 运维常见漏洞
@@ -14,3 +15,6 @@
     - ftp爆破
     - memcached未授权访问
     - Mongodb未授权访问
+    - Redis未授权访问
+    - rsync未授权访问
+    - zabbix注入
