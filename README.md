@@ -18,3 +18,4 @@
     - Redis未授权访问
     - rsync未授权访问
     - zabbix注入
+    - HTTP Basic 爆破
