@@ -12,6 +12,9 @@
 
 * 运维常见漏洞
 
+    - CVE_2014_6271_Shellshock
+    - CVE_2016_3088_ActiveMQ
+    - CVE_2018_10561_GPON摄像头
     - ftp爆破
     - memcached未授权访问
     - Mongodb未授权访问
